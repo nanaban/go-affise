@@ -142,14 +142,3 @@ func (c *Client) checkResponse(r *http.Response) error {
 type Response struct {
 	*http.Response
 }
-
-//todo
-// Pagination represents pagination information.
-type Pagination struct {
-	Page         int
-	PerPage      int
-	PreviousPage int
-	NextPage     int
-	LastPage     int
-	TotalEntries int
-}
