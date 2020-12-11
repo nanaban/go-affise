@@ -16,7 +16,7 @@ func main() {
 
 	ctx := context.Background()
 	offer, _, err := client.Offers.GetByID(ctx, 1)
-	if err != nil{
+	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println(offer)

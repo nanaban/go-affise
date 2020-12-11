@@ -92,7 +92,7 @@ func (c *Client) NewRequestQueryParams(ctx context.Context, method, path string,
 	if queryParams != nil {
 		values := make(url.Values)
 		err := c.encoder.Encode(queryParams, values)
-		if err != nil{
+		if err != nil {
 			return nil, fmt.Errorf("encode query params err: %v", err)
 		}
 		path += "?" + values.Encode()
